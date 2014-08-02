@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "EstPoker Room";
+}
+
+<h2>@ViewBag.Title # @ViewBag.RoomId</h2>
+<div id="room_user_name">
+    <fieldset id="NameSelectorContainer">
+        <legend>Your Name:</legend>
+        <input type="text" id="userName" value="Anonymous" />
+        <input type="button" id="nameSave" value="Save Name" /><br />
+        Your Name: <span id="currentUserName">[placeholder]</span>
+    </fieldset>
+    <fieldset id="CardSelectorContainer" style="display: none;">
+        <legend>Card Type:</legend>
+        <select id="cardtype">
+            <option value="1t10">1 thru 10</option>
+            <option value="tshirt">T-Shirt Shizes</option>
+        </select>
+    </fieldset>
+    <fieldset id="UserResponseContainer">
+        <legend>Users:</legend>
+        <ul>
+            <li></li>
+        </ul>
+    </fieldset>
+</div>
+
+<div id="AllCards">
+    <fieldset id="cardChoices">
+    </fieldset>
+</div>
+<div id="cardContainer">
+    <div class="card">
+    </div>
+</div>
+
+@Scripts.Render("~/Content/room.js")
+@Scripts.Render("~/Content/user.js")
+@Scripts.Render("~/Content/cards.js")
+<script type="text/javascript">
+    $(document).ready(function () {
+        EstPoker.Room.Initialize();
+    });
+</script>

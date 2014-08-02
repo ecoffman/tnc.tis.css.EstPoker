@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>EstimationPoker</h2>
+
+<fieldset>
+    <legend>Create Room</legend>
+    <div>
+        <input id="btnCreateRoom" type="button" value="Create a Room" />
+    </div>
+</fieldset>
+<fieldset>
+    <legend>Join Room</legend>
+    <input id="lblJoinRoom" type="text" placeholder="Room #" />
+    <input id="btnJoinRoom" type="button" value="Join Room" />
+</fieldset>
+
+<script>
+    $("#btnCreateRoom").click(function () {
+        //if (window.console.log) console.log("create room button clicked");
+        window.location = "/CreateRoom";
+    });
+</script>
