@@ -25,18 +25,22 @@
     </fieldset>
 </div>
 
+<!-- User's cards to make choice -->
 <div id="AllCards">
     <fieldset id="cardChoices">
     </fieldset>
 </div>
-<div id="cardContainer">
-    <div class="card">
+
+<!-- All Users' card Choice -->
+<div id="UserCards">
+    <div class="card" data-user-id="" data-user-choice="">
     </div>
 </div>
 
-@Scripts.Render("~/Content/room.js")
-@Scripts.Render("~/Content/user.js")
-@Scripts.Render("~/Content/cards.js")
+@Scripts.Render("~/Content/js/Room.js")
+@Scripts.Render("~/Content/js/User.js")
+@Scripts.Render("~/Content/js/Cards.js")
+@Scripts.Render("~/Content/js/PokerManager.js")
 <script type="text/javascript">
     $(document).ready(function () {
         EstPoker.Room.Initialize();

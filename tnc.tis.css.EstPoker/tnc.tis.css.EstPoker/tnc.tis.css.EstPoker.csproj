@@ -141,13 +141,15 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="SocketManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Cards.js" />
+    <Content Include="Content\js\Cards.js" />
+    <Content Include="Content\images\bgimg.png" />
+    <Content Include="Content\images\card_bgimg.jpg" />
+    <Content Include="Content\js\PokerManager.js" />
     <Content Include="Content\images\iconsprite.png" />
-    <Content Include="Content\User.js" />
-    <Content Include="Content\Room.js" />
+    <Content Include="Content\js\User.js" />
+    <Content Include="Content\js\Room.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -203,7 +205,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\css\Site.css" />
     <Content Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
