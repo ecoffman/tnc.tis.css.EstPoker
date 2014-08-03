@@ -1,0 +1,1 @@
+C:\Python27\python.exe C:\pyscripts\EstPokerServer\WebSocketServer.py --port=8182
