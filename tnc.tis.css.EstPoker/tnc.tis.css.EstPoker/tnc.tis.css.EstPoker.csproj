@@ -141,6 +141,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="SocketManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Cards.js" />
